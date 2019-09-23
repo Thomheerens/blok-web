@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Open89';
+    src: url("./fonts/LLHvH-Open89.woff2") format("woff2"),
+        url("./fonts/LLHvH-Open89.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open89', sans-serif;
+    font-weight: 300;
+    color: white;
+    /*background-color: #0026cc;*/
+    background-color: black;
+}
+
+header {
+    margin: 0;
+    padding: 1px;
+    overflow-x: auto;
+    background-image:
+        linear-gradient(#0026cc, black);
+}
+
+ul,
+li {
+    display: flex;
+    list-style: none;
+    align-self: center;
+    padding: 0 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lawngreen;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+.animatedheader {
+    max-height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 20px;
+}
+
+article {
+    box-shadow: inset 0px -1px 36px -1px rgba(0, 0, 0, 0.75);
+    /*background-color: #4cd066;*/
+    background-color: blue;
+    margin: 10px;
+}
+
+.article-artiest img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    ul,
+    li {
+        justify-content: center;
+    }
+
+}
+}
